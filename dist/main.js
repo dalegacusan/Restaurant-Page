@@ -86,14 +86,49 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/content.js":
+/*!************************!*\
+  !*** ./src/content.js ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("function insertContent(contentContainer){\r\n\r\n}\n\n//# sourceURL=webpack:///./src/content.js?");
+
+/***/ }),
+
+/***/ "./src/footer.js":
+/*!***********************!*\
+  !*** ./src/footer.js ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("\n\n//# sourceURL=webpack:///./src/footer.js?");
+
+/***/ }),
+
+/***/ "./src/header.js":
+/*!***********************!*\
+  !*** ./src/header.js ***!
+  \***********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nfunction insertHeader(contentContainer){\r\n    const semanticHeader = document.createElement(\"header\");\r\n    \r\n    const navbarContainer = document.createElement(\"div\");\r\n    navbarContainer.classList.add(\"navbar\");\r\n\r\n    const semanticNav = document.createElement(\"nav\");\r\n\r\n    const restaurantName = document.createElement(\"span\");\r\n    restaurantName.textContent = \"Dale's Restaurant\";\r\n\r\n    const navbarItemsContainer = document.createElement(\"div\");\r\n    navbarItemsContainer.classList.add(\"navbarItems\");\r\n    const listItems = [\"Home\", \"About\", \"Contact\"];\r\n\r\n    for (let item of listItems){\r\n        const navItem =  document.createElement(\"a\");\r\n        navItem.setAttribute(\"href\", \"/\");\r\n        navItem.textContent = item;\r\n        navbarItemsContainer.appendChild(navItem);\r\n    }\r\n\r\n    semanticNav.appendChild(restaurantName);\r\n    semanticNav.appendChild(navbarItemsContainer);\r\n    navbarContainer.appendChild(semanticNav);\r\n    semanticHeader.appendChild(navbarContainer);\r\n    \r\n    contentContainer.appendChild(semanticHeader);\r\n    \r\n}\r\n\r\n/* harmony default export */ __webpack_exports__[\"default\"] = (insertHeader);\n\n//# sourceURL=webpack:///./src/header.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("console.log(\"Hello World!\");\n\n//# sourceURL=webpack:///./src/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _content__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./content */ \"./src/content.js\");\n/* harmony import */ var _content__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_content__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_footer__WEBPACK_IMPORTED_MODULE_2__);\n\r\n\r\n\r\n\r\nconst mainContainer = document.querySelector(\".mainContainer\");\r\n\r\nObject(_header__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(mainContainer)\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
