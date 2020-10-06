@@ -1,4 +1,4 @@
-function insertHeader(contentContainer){
+function insertHeader(mainContainer){
     const semanticHeader = document.createElement("header");
     
     const navbarContainer = document.createElement("div");
@@ -25,7 +25,7 @@ function insertHeader(contentContainer){
     navbarContainer.appendChild(semanticNav);
     semanticHeader.appendChild(navbarContainer);
     
-    contentContainer.appendChild(semanticHeader);
+    mainContainer.appendChild(semanticHeader);
     
 }
 
